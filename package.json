@@ -4,7 +4,7 @@
   "description": "A Discord bot to program and code as a personal project",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
