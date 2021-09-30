@@ -3,7 +3,7 @@ const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MES
 
 bot.on('ready', () => {
     console.log("Poptart Bot is online!");
-    bot.user.setActivity('Prefix is: p. ', { type: "WATCHING"}).catch(console.error);
+    bot.user.setActivity('Prefix is: . ', { type: "WATCHING"});
 })
 
 bot.on('error', console.error);
