@@ -8,3 +8,5 @@ client.once("ready", () => {
 })
 
 client.login(process.env.DS_TOKEN);
+
+client.user.setStatus('In Development', {type: 'PLAYING'});
