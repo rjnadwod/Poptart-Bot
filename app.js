@@ -11,6 +11,18 @@ bot.on('ready', () => {
 
 deploy.deployCommands();
 
+bot.on('interactionCreate', async interaction => {
+	if (!interaction.isCommand()) return;
+
+	if (interaction.commandName === 'ping') {
+		await interaction.reply('Pong!');
+	}
+
+    if (interaction.commandName === 'beep') {
+		await interaction.reply('Boop!');
+	}
+});
+
 bot.on('error', console.error);
 
 bot.login(process.env.DJS_TOKEN);
