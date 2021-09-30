@@ -1,0 +1,29 @@
+{
+  "name": "poptartbot",
+  "version": "1.0.0",
+  "description": "A Discord bot to program and code as a personal project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjnadwod/Poptart-Bot.git"
+  },
+  "keywords": [
+    "discord",
+    "js"
+  ],
+  "author": "rjnadwod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjnadwod/Poptart-Bot/issues"
+  },
+  "homepage": "https://github.com/rjnadwod/Poptart-Bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  }
+}
