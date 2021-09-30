@@ -1,12 +1,13 @@
 require("dotenv").config();
 
 const { Client, Intents } = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-client.once("ready", () => {
+bot.on('ready', () => {
     console.log("Poptart Bot is online!");
+    bot.user.setStatus('In Development', {type: 'PLAYING'});
 })
 
-client.login(process.env.DS_TOKEN);
+bot.on('error', console.error);
 
-client.user.setStatus('In Development', {type: 'PLAYING'});
+bot.login(process.env.DS_TOKEN);
