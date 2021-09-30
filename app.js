@@ -1,7 +1,6 @@
-require("dotenv").config();
-
 const { Client, Intents } = require('discord.js');
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+//const config = require('./config.json');
 
 bot.on('ready', () => {
     console.log("Poptart Bot is online!");
